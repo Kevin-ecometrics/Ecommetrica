@@ -28,37 +28,37 @@ function Navbar() {
         <div className="text-sm lg:flex-grow">
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Principal
           </Link>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Services
           </Link>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Our Consulting
           </Link>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Schema
           </Link>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Success stories
           </Link>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-pink-800"
           >
             Agile
           </Link>
@@ -66,7 +66,7 @@ function Navbar() {
         <div>
           <Link
             href="/"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-gray-200"
+            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-blue-800"
           >
             Login
           </Link>

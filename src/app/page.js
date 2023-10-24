@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 
 function Page() {
   return (
-    <div className="relative h-screen bg-gradient-to-r from-blue-300 via-purple-700 to-pink-500">
+    <div className="relative h-screen bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800">
         <Navbar />
         <HeroAnimation />
 
