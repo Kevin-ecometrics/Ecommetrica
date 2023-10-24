@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import {Button} from "@nextui-org/react";
 
 function HeroAnimation() {
   return (
@@ -46,6 +48,11 @@ function HeroAnimation() {
             </svg>
           </div>
         </div>
+      </div>
+      <div className="text-center button-container">
+        <Button color="danger"  size="lg" style={{ marginTop: '38rem' }}>
+          Try 1st Session
+        </Button>
       </div>
       <style
         dangerouslySetInnerHTML={{

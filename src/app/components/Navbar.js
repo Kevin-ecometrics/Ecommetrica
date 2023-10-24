@@ -40,9 +40,7 @@ export default function App() {
 
       <NavbarContent className="pr-3 sm:hidden" justify="center">
         <NavbarBrand>
-          <Image src={"/logo.png"} width={50} height={50} alt={"logo"} />
-          <p className="font-bold text-black">Ecommetrica</p>
-        </NavbarBrand>
+          <Image src={"/logo.png"} width={50} height={50} alt={"logo"} />        </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
