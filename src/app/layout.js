@@ -1,6 +1,6 @@
 import { Montserrat } from 'next/font/google'
 import './globals.css'
-
+import {Providers} from "./providers";
 const monse = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={monse.className}>{children}</body>
+      <body className={monse.className}>
+        <Providers>
+          {children}
+        </Providers>  
+      </body>
     </html>
   )
 }
