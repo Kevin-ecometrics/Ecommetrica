@@ -85,7 +85,7 @@ function ConsultingSection() {
           >
             {dato.id === 2 && (
               <div className="absolute top-0 w-full text-center text-white bg-red-500">
-                <h1 className="text-lg font-bold">Más popular</h1>
+                <h1 className="text-lg font-bold">POPULAR</h1>
               </div>
             )}
             <div className="w-full overflow-hidden bg-white rounded-md max-w-330">
