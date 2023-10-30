@@ -12,7 +12,7 @@ export default function Stepper() {
     }
   };
 
-  const sectionTitles = ["Choose", "Meet", "The Method", "Receive"];
+  const sectionTitles = ["Choose", "Meet", "Method", "Project"];
 
   return (
     <article>
