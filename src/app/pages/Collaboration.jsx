@@ -3,7 +3,7 @@ import { Card, Skeleton } from "@nextui-org/react";
 
 function Collaboration() {
   return (
-    <div className="p-4 text-center text-black md:p-12 min-h-min">
+    <div id="agile" className="p-4 text-center text-black md:p-12 min-h-min">
       <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#623375]">Collaboration stories</h1>
       <p className="py-4 text-base md:text-lg lg:text-xl text-[#FF4D4D]">We are community.</p>
       <p className="text-base md:text-lg lg:text-xl">

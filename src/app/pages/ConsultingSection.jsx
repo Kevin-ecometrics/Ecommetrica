@@ -67,7 +67,7 @@ function ConsultingSection() {
   };
 
   return (
-    <div className="items-center py-16 text-center min-h-min">
+    <div id="consulting" className="items-center py-16 text-center min-h-min">
       <h1 className="text-[#623375] text-5xl font-bold">
         eCommerce meticulously appraised
       </h1>

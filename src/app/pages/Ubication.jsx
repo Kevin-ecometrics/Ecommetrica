@@ -8,7 +8,7 @@ import { FaLocationArrow, FaClock, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 function Ubication() {
   return (
-    <div className="p-4 text-center text-black md:p-24 min-h-min">
+    <div  className="p-4 text-center text-black md:p-24 min-h-min">
         <h1 className="text-3xl font-bold text-[#623375]">Find Us</h1>
         <p className="text-[#F52F55] text-4xl">Any questions?</p>
         <p className="text-[#F52F55] text-4xl" >We love to answer</p>
@@ -19,8 +19,8 @@ function Ubication() {
             radius="lg"
           >
             <iframe
-              width="600"
-              height="600"
+              width="400"
+              height="500"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

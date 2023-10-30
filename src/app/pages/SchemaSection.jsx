@@ -4,7 +4,7 @@ import Stepper from "../components/Stepper";
 const Consultation = () => {
 
   return (
-    <main>
+    <main id="schema">
         <Stepper />
         <Cards />
     </main>

@@ -43,15 +43,15 @@ function Sucess() {
   ];
 
   return (
-    <div className="px-24 py-12 text-black min-h-min">
+    <div id="stories" className="px-24 py-12 text-black min-h-min">
       <div className="flex items-center justify-center">
         <Card className="bg-[#7C005C] shadow-2xl">
           <CardBody className="p-8">
             <h1 className="text-4xl font-bold text-center text-white">
-              Client's testimonials
+              Clients testimonials
             </h1>
             <p className="text-xl text-[#FF4D4D] text-center">
-              We are proud of our customers' success stories
+              We are proud of our customers success stories
             </p>
           </CardBody>
         </Card>
@@ -66,14 +66,14 @@ function Sucess() {
 
       <div className="grid grid-cols-1 gap-16 p-8 sm:grid-cols-2 md:grid-cols-4">
         {dataSucess.map((data) => (
-          <div className="flex justify-center">
+          <div key={data.id} className="flex justify-center">
             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-none">
               <Avatar
                 isBordered
                 color="secondary"
                 src={data.avatar}
                 alt="clients"
-                className="shadow-2xl  w-92 h-92 text-large sm:h-92 sm:w-92 md:h-92 md:w-92"
+                className="shadow-2xl w-92 h-92 text-large sm:h-92 sm:w-92 md:h-92 md:w-92"
               />
               <p className="text-sm font-bold py-4 sm:py-6 flex justify-center text-[#F52F55]">
                 {data.name}

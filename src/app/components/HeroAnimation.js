@@ -4,7 +4,7 @@ import {Button} from "@nextui-org/react";
 
 function HeroAnimation() {
   return (
-    <div className="relative h-screen main_container bg-gradient-to-r from-[#201A48]  to-[#861453]" style={{ borderRadius: "0 0 100% 100% / 0 0 10vw 10vw" }}>
+    <div id="principal" className="relative h-screen main_container bg-gradient-to-r from-[#201A48]  to-[#861453]" style={{ borderRadius: "0 0 100% 100% / 0 0 10vw 10vw" }}>
         <div className="e_container">
           <div className="e_card">
             <h1 className="text-gray-400">
