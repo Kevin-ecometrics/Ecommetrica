@@ -14,10 +14,10 @@ import { Link } from "react-scroll";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [activeSection, setActiveSection] = React.useState("principal");
+  const [activeSection, setActiveSection] = React.useState("Services");
 
   const menuItems = [
-    { name: "Principal", href: "#principal" },
+    // { name: "Principal", href: "#principal" },
     { name: "Services", href: "#services" },
     { name: "Our Consulting", href: "#consulting" },
     { name: "Schema", href: "#schema" },
@@ -81,9 +81,9 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem className="hidden text-black lg:flex">
+        {/* <NavbarItem className="hidden text-black lg:flex">
           <Link to="#">Login</Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <Link href="#">
             <a>

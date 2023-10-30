@@ -11,14 +11,14 @@ const Footer = () => {
           <h3 className="mb-3 text-lg font-bold">Company</h3>
           <ul>
             <li className="mb-2">
-              <Link
+              {/* <Link
                 to="principal"
                 smooth={true}
                 duration={1000}
                 className="hover:text-gray-400"
               >
                 Principal
-              </Link>
+              </Link> */}
             </li>
             <li className="mb-2">
               <Link
