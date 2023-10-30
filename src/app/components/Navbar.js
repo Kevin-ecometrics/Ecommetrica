@@ -22,7 +22,7 @@ export default function App() {
     { name: "Our Consulting", href: "#consulting" },
     { name: "Schema", href: "#schema" },
     { name: "Success Stories", href: "#stories" },
-    { name: "Agile", href: "#agile" },
+    { name: "Collaboration", href: "#agile" },
   ];
 
   const handleMenuItemClick = (href) => {

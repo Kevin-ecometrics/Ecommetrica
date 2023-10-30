@@ -1,21 +1,18 @@
 import { Card } from "@nextui-org/react";
 import React from "react";
-import {
-  List,
-  ListItem,
-} from "@chakra-ui/react";
-import { FaLocationArrow, FaClock, FaPhone, FaEnvelope } from 'react-icons/fa'
+import { List, ListItem } from "@chakra-ui/react";
+import { FaLocationArrow, FaClock, FaPhone, FaEnvelope } from "react-icons/fa";
 
 function Ubication() {
   return (
-    <div  className="p-4 text-center text-black md:p-24 min-h-min">
-        <h1 className="text-3xl font-bold text-[#623375]">Find Us</h1>
-        <p className="text-[#F52F55] text-4xl">Any questions?</p>
-        <p className="text-[#F52F55] text-4xl" >We love to answer</p>
+    <div className="p-4 text-center text-black md:p-24 min-h-min">
+      <h1 className="text-3xl font-bold text-[#623375]">Find us in Tijuana</h1>
+      <p className="text-[#F52F55] text-4xl">Any questions?</p>
+      <p className="text-[#F52F55] text-4xl">We love to answer</p>
       <div className="flex flex-col py-8 md:flex-row">
         <div className="flex-1 md:p-8">
           <Card
-            className="mx-auto space-y-5 border border-black shadow-2xl w-96 h-96"
+            className="mx-auto space-y-5 border-[#F52F55] shadow-2xl border-3 w-96 h-96"
             radius="lg"
           >
             <iframe
@@ -33,27 +30,22 @@ function Ubication() {
           <List spacing={3}>
             {/* You can also use custom icons from react-icons */}
             <div className="flex">
-                <FaLocationArrow className="mr-2" />
-                <ListItem>
-                Calle Ignacio Zaragoza 8169-306, 22000 Tijuana, B.C.                </ListItem>
+              <FaLocationArrow className="mr-2" />
+              <ListItem>
+                Calle Ignacio Zaragoza 8169-306, 22000 Tijuana, B.C.{" "}
+              </ListItem>
             </div>
             <div className="flex">
-                <FaClock className="mr-2" />
-                <ListItem>
-                9-6 PCT
-                </ListItem>
+              <FaClock className="mr-2" />
+              <ListItem>9-6 PCT</ListItem>
             </div>
             <div className="flex">
-                <FaPhone className="mr-2" />
-                <ListItem>
-                +526646429633
-                </ListItem>
+              <FaPhone className="mr-2" />
+              <ListItem>+526646429633</ListItem>
             </div>
             <div className="flex">
-                <FaEnvelope className="mr-2" />
-                <ListItem>
-                juanmanuel@e-commetrics.com
-                </ListItem>
+              <FaEnvelope className="mr-2" />
+              <ListItem>juanmanuel@e-commetrics.com</ListItem>
             </div>
           </List>
         </div>
