@@ -1,9 +1,10 @@
+"use client"
 import React from "react";
+import {Button} from "@nextui-org/react";
 
 function HeroAnimation() {
   return (
-    <div className="relative h-screen main_container bg-gradient-to-r from-blue-800 via-purple-800 to-pink-800" style={{ borderRadius: "0 0 100% 100% / 0 0 10vw 10vw" }}>
-      <div>
+    <div id="principal" className="relative h-screen main_container bg-gradient-to-r from-[#201A48]  to-[#861453]" style={{ borderRadius: "0 0 100% 100% / 0 0 10vw 10vw" }}>
         <div className="e_container">
           <div className="e_card">
             <h1 className="text-gray-400">
@@ -46,6 +47,10 @@ function HeroAnimation() {
             </svg>
           </div>
         </div>
+      <div className="text-center button-container">
+        <Button color="danger"  size="lg" style={{ marginTop: '38rem' }}>
+          Try 1st Session
+        </Button>
       </div>
       <style
         dangerouslySetInnerHTML={{
