@@ -85,7 +85,8 @@ export default function App() {
           <Link to="#">Login</Link>
         </NavbarItem> */}
         <NavbarItem>
-          <Link href="#">
+          <Link href="https://wa.me/numero?text=Im%20interested%20
+          in%20create%20my%20page" target="_blank">
             <a>
               <Button color="danger">CONTACT US</Button>
             </a>
