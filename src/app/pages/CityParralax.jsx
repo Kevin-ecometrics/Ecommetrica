@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 
 function CityParallax() {
   return (
-    <Parallax bgImage={"/Scene.png"} strength={650}>
+    <Parallax bgImage={"/parallax.png"} strength={650}>
       <div
         style={{
           height: "200px",

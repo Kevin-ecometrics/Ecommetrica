@@ -53,7 +53,7 @@ export default function Cards() {
             className="z-0 object-cover w-full h-full opacity-50"
             width={500}
             height={500}
-            src="/background2.jpg"
+            src="/background2.png"
           />
         </Card>
         <Card
