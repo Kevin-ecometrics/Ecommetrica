@@ -6,7 +6,9 @@ import ServiceSection from "./pages/ServiceSection";
 import ConsultingSection from "./pages/ConsultingSection";
 import Loading from "./components/Loading";
 import SchemaSection from "./pages/SchemaSection";
-import CityParralax from "./pages/CityParralax";
+import Parralax from "./pages/Parralax";
+import Parralax2 from "./pages/Parralax2";
+import Parralax3 from "./pages/Parralax3";
 import Sucess from "./pages/Sucess";
 import Collaboration from "./pages/Collaboration";
 import Ubication from "./pages/Ubication";
@@ -31,11 +33,11 @@ function Page() {
           <ServiceSection />
           <ConsultingSection />
           <SchemaSection />
-          <CityParralax />
+          <Parralax />
           <Sucess />
-          <CityParralax />
+          <Parralax2 />
           <Collaboration />
-          <CityParralax />
+          <Parralax3 />
           <Ubication />
           <Footer />
         </>

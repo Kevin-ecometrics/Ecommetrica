@@ -43,7 +43,7 @@ function Sucess() {
   ];
 
   return (
-    <div id="stories" className="px-24 py-12 text-black min-h-min">
+    <div id="stories" className="p-8 text-black min-h-min">
       <div className="flex items-center justify-center">
         <Card className="bg-[#7C005C] shadow-2xl">
           <CardBody className="p-8">
@@ -64,7 +64,7 @@ function Sucess() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-16 p-8 sm:grid-cols-2 md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-16 p-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
         {dataSucess.map((data) => (
           <div key={data.id} className="flex justify-center">
             <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-none">

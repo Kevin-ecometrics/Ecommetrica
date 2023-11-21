@@ -68,8 +68,10 @@ export default function App() {
               }`} // Agregamos la clase CSS correspondiente
               onClick={() => {
                 handleMenuItemClick(item.href);
-                handleSetActiveSection(item.href.replace("#", ""));
               }} // Actualizamos la sección activa al hacer clic
+              onSetActive={() => {
+                handleSetActiveSection(item.href.replace("#", ""));
+              }} // Actualizamos la sección activa cuando llegamos a la sección
               smooth={true}
               duration={1000}
               spy={true}
@@ -81,12 +83,12 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        {/* <NavbarItem className="hidden text-black lg:flex">
-          <Link to="#">Login</Link>
-        </NavbarItem> */}
         <NavbarItem>
-          <Link href="https://wa.me/526646429633?text=Im%20interested%20
-          in%20create%20my%20page" target="_blank">
+          <Link
+            href="https://wa.me/526646429633?text=Im%20interested%20
+          in%20create%20my%20page"
+            target="_blank"
+          >
             <a>
               <Button color="danger">CONTACT US</Button>
             </a>
@@ -100,16 +102,7 @@ export default function App() {
             <Link
               className={`w-full text-red-800 hover:text-blue-700 ${
                 activeSection === item.href.replace("#", "") ? "font-bold" : ""
-              }`} // Agregamos la clase CSS correspondiente
-              to={item.href.replace("#", "")}
-              size="lg"
-              onClick={() => {
-                handleMenuItemClick(item.href);
-                handleSetActiveSection(item.href.replace("#", ""));
-              }} // Actualizamos la sección activa al hacer clic
-              smooth={true}
-              duration={1000}
-              spy={true}
+              }`} // Agregamos la clase CSS corrconst handleMenuItemClick = (href: string) => {
             >
               {item.name}
             </Link>

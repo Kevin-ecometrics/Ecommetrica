@@ -24,7 +24,7 @@ function Services() {
     <div id="services" className='items-center py-16 text-center min-h-min'>
       <h1 className='text-[#623375] text-7xl font-bold'>Our Services</h1>
       <p className='text-[#f52e55] text-4xl py-2 font-bold'>All you need for e-commerce success</p>
-      <div className='grid grid-cols-1 gap-2 px-8 py-16 md:px-48 md:grid-cols-2'>
+      <div className='grid grid-cols-1 gap-2 px-8 py-16 lg:px-48 md:px-24 sm:px-16 md:grid-cols-2'>
         {servicesData.map((service) => (
           <React.Fragment key={service.id}>
             {isMobile ? (

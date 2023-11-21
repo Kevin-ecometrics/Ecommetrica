@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Button } from "@nextui-org/react";
 import Image from "next/image";
-import { FaShoppingCart } from "react-icons/fa";
 function ConsultingSection() {
   const datos = [
     {
@@ -75,7 +74,7 @@ function ConsultingSection() {
         A unified digital team with marketing and technology expertise, built
         especially for B2B and B2C eCommerce!
       </p>
-      <div className="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-4 md:px-32">
+      <div className="grid grid-cols-1 gap-4 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-32">
         {datos.map((dato) => (
           <Card
             key={dato.id}

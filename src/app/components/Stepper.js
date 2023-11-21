@@ -16,11 +16,11 @@ export default function Stepper() {
 
   return (
     <article>
-      <div className="py-12 text-center text-white bg-[#7C005C] sm:px-8 md:px-72">
+      <div className="py-12 text-center text-white bg-[#7C005C] sm:px-8 md:px-32 lg:px-72">
         <h1 className="text-4xl font-bold">What is inside a Consultation?</h1>
         <p className="text-lg text-white">The Working Schema</p>
 
-        <div className="flex flex-col items-center justify-between px-12 mt-8 sm:flex-row">
+        <div className="flex flex-col items-center justify-between px-12 mt-8 sm:px-0 sm:gap-2 sm:flex-row">
           {[1, 2, 3, 4].map((section, index) => (
             <Fragment key={section}>
               <div

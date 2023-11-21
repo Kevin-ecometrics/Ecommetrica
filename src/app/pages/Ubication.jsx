@@ -12,7 +12,7 @@ function Ubication() {
       <div className="flex flex-col py-8 md:flex-row">
         <div className="flex-1 md:p-8">
           <Card
-            className="mx-auto space-y-5 border-[#F52F55] shadow-2xl border-3 w-96 h-96"
+            className="mx-auto space-y-5 border-[#F52F55] shadow-2xl border-3 w-72 h-80 md:w-96 md:h-96"
             radius="lg"
           >
             <iframe
@@ -43,7 +43,7 @@ function Ubication() {
               <FaPhone className="mr-2" />
               <ListItem>+526646429633</ListItem>
             </div>
-            <div className="flex">
+            <div className="flex text-start">
               <FaEnvelope className="mr-2" />
               <ListItem>juanmanuel@e-commetrics.com</ListItem>
             </div>

@@ -32,11 +32,11 @@ export default function Cards() {
     },
   ];
   return (
-    <div className="p-12 text-center text-black bg-white sm:px-8 md:px-32">
+    <div className="p-12 text-center text-black bg-white sm:px-32 md:px-32">
       <div className="grid grid-cols-2 gap-4 text-black">
         <Card
           isFooterBlurred
-          className="w-full h-[300px] col-span-2 shadow-2xl sm:col-span-1"
+          className="w-full h-[300px] col-span-2 shadow-2xl md:col-span-1"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
             <h1 className="text-xl font-bold text-red-600 uppercase">
@@ -80,48 +80,72 @@ export default function Cards() {
         </Card>
       </div>
 
-      <div className="grid grid-cols-3 gap-8 py-12">
+      <div className="grid grid-cols-3 gap-8 py-12 md:grid-cols-3 lg:grid-cols-3">
         <Card
           isFooterBlurred
-          className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl bg-orange-200"
+          className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="py-2 text-4xl font-medium text-white">
-              Business & Technology{" "}
+            <h1 className="py-2 text-3xl font-medium text-black">
+            Business & Technology{" "}
             </h1>
-            <p className="font-bold uppercase text-tiny text-white/60">
-              To boost your sales with efficacy.{" "}
+            <p className="font-bold text-black uppercase text-tiny">
+            To boost your sales with efficacy.{" "}
             </p>
           </CardHeader>
+          <Image
+            removeWrapper
+            alt="Relaxing app background"
+            className="z-0 object-cover w-full h-full opacity-50"
+            width={500}
+            height={500}
+            src="/Business & Technology.png"
+          />
         </Card>
         <Card
           isFooterBlurred
           className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="py-2 text-4xl font-medium text-black">
+            <h1 className="py-2 text-3xl font-medium text-black">
               Supply Chain & Dispatch{" "}
             </h1>
             <p className="font-bold text-black uppercase text-tiny">
               To save money and deliver on time.{" "}
             </p>
           </CardHeader>
+          <Image
+            removeWrapper
+            alt="Relaxing app background"
+            className="z-0 object-cover w-full h-full opacity-50"
+            width={500}
+            height={500}
+            src="/Supply chain.png"
+          />
         </Card>
         <Card
           isFooterBlurred
-          className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl bg-pink-200"
+          className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="py-2 text-4xl font-medium text-white/90">
+          <h1 className="py-2 text-3xl font-medium text-black">
               Digital Marketing{" "}
             </h1>
-            <p className="font-bold uppercase text-tiny text-white/60">
-              To influence and grow your brand online{" "}
+            <p className="font-bold text-black uppercase text-tiny">
+              To influence and grow your brand online.{" "}
             </p>
           </CardHeader>
+          <Image
+            removeWrapper
+            alt="Relaxing app background"
+            className="z-0 object-cover w-full h-full opacity-50"
+            width={500}
+            height={500}
+            src="/Digital Marketing.png"
+          />
         </Card>
       </div>
-      <h1 className="text-4xl font-bold text-[#623375]">
+      <h1 className="text-3xl font-bold text-[#623375]">
         WHY an e-Commerce Consultation?
       </h1>
       <p className="py-4 text-xl text-[#F52F55] font-semibold">Your CONSULTANT will</p>
@@ -138,7 +162,7 @@ export default function Cards() {
         schedule now if your business is having trouble in any of the following
         key business areas :
       </p>
-      <div className="grid grid-cols-4 gap-8 py-12">
+      <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card) => (
           <Card
             key={card.id}
