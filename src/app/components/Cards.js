@@ -39,10 +39,10 @@ export default function Cards() {
           className="w-full h-[300px] col-span-2 shadow-2xl md:col-span-1"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="text-xl font-bold text-red-600 uppercase">
+            <h1 className="text-xl font-bold text-[#201A48] uppercase">
               Connect the internet to your Business!{" "}
             </h1>
-            <p className="text-base font-medium text-red-800">
+            <p className="text-base font-medium text-[#201A48]">
               Bring the best of the digital ecosystem right to your digital
               webpage or store, and boost your sales while you sleep.{" "}
             </p>
@@ -61,10 +61,10 @@ export default function Cards() {
           className="w-full h-[300px] col-span-2 shadow-2xl sm:col-span-1"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="text-xl font-bold text-red-600 uppercase">
+            <h1 className="text-xl font-bold text-[#201A48] uppercase">
               Ecommerce is growing in pandemic!{" "}
             </h1>
-            <p className="text-base font-medium text-red-800">
+            <p className="text-base font-medium text-[#201A48]">
               Consultation fulfills business projections in data-oriented growth
               strategies for every revenue stream.
             </p>
@@ -86,10 +86,10 @@ export default function Cards() {
           className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="py-2 text-3xl font-medium text-black">
+            <h1 className="py-2 text-3xl font-medium text-[#201A48]">
             Business & Technology{" "}
             </h1>
-            <p className="font-bold text-black uppercase text-tiny">
+            <p className="font-bold text-[#201A48] uppercase text-tiny">
             To boost your sales with efficacy.{" "}
             </p>
           </CardHeader>
@@ -107,10 +107,10 @@ export default function Cards() {
           className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-            <h1 className="py-2 text-3xl font-medium text-black">
+            <h1 className="py-2 text-3xl font-medium text-[#201A48]">
               Supply Chain & Dispatch{" "}
             </h1>
-            <p className="font-bold text-black uppercase text-tiny">
+            <p className="font-bold text-[#201A48] uppercase text-tiny">
               To save money and deliver on time.{" "}
             </p>
           </CardHeader>
@@ -128,10 +128,10 @@ export default function Cards() {
           className="w-full h-[300px] col-span-3 sm:col-span-1 shadow-2xl"
         >
           <CardHeader className="absolute inset-0 z-10 flex-col items-center justify-center">
-          <h1 className="py-2 text-3xl font-medium text-black">
+          <h1 className="py-2 text-3xl font-medium text-[#201A48]">
               Digital Marketing{" "}
             </h1>
-            <p className="font-bold text-black uppercase text-tiny">
+            <p className="font-bold text-[#201A48] uppercase text-tiny">
               To influence and grow your brand online.{" "}
             </p>
           </CardHeader>
