@@ -37,7 +37,7 @@ function Page() {
           <Sucess />
           <Parralax2 />
           {/* <Collaboration /> */}
-          <Parralax3 />
+          {/* <Parralax3 /> */}
           <Ubication />
           <Footer />
         </>

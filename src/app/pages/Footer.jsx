@@ -1,4 +1,5 @@
-import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillLinkedin} from "react-icons/ai";
+import { FaXTwitter} from "react-icons/fa6"
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { motion } from 'framer-motion';
@@ -19,7 +20,7 @@ function Footer() {
   };
   const iconsTab = [
     { icon: <AiFillLinkedin />, link: "https://www.linkedin.com/in/onlyjuan/" },
-    { icon: <AiOutlineTwitter />, link: "https://twitter.com/SrGenial" },
+    { icon: <FaXTwitter />, link: "https://twitter.com/SrGenial" },
   ];
   return (
     <>
