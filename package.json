@@ -25,9 +25,12 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "react-parallax": "^3.5.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
+    "@types/node": "20.10.4",
+    "@types/react": "18.2.44",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",

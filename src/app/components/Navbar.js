@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
 	Modal,
 	ModalContent,
@@ -27,16 +27,31 @@ import axios from 'axios'
 export default function App() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 	const [activeSection, setActiveSection] = React.useState('Services')
-
 	const [showPassword, setShowPassword] = useState(false)
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [errorMessage, setErrorMessage] = useState('')
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
+	const [user, setUser] = useState(null)
+
+	useEffect(() => {
+		const fetchUser = async () => {
+			try {
+				const res = await axios.get('http://localhost:3001/api/user', { withCredentials: true })
+				if (res && res.data.user) {
+					setUser(res.data.user)
+				}
+			} catch (error) {
+				console.error('Error al obtener el usuario:', error.response.data)
+			}
+		}
+		fetchUser()
+	}, [])
 
 	const handleDashboard = () => {
 		router.push('/dashboard')
 	}
+
 	const router = useRouter()
 	const handleShowPassword = () => {
 		setShowPassword(!showPassword)
@@ -47,7 +62,7 @@ export default function App() {
 
 		try {
 			const response = await axios.post(
-				'https://e-commetrics.com/login',
+				'http://localhost:3001/login',
 				{ email, password },
 				{
 					headers: { 'Content-Type': 'application/json' },
@@ -55,7 +70,7 @@ export default function App() {
 				},
 			)
 			if (response.data.success) {
-				console.log(response.data)
+				// console.log(response.data)
 				setIsLoggedIn(true)
 				// router.push('/dashboard')
 			} else {
@@ -77,15 +92,15 @@ export default function App() {
 	]
 
 	const handleMenuItemClick = (href) => {
-		const element = document.querySelector(href);
+		const element = document.querySelector(href)
 		if (element) {
-		  element.scrollIntoView({ behavior: 'smooth' });
+			element.scrollIntoView({ behavior: 'smooth' })
 		}
-	  };
+	}
 
 	const handleSetActiveSection = (section) => {
 		setActiveSection(section)
-	} // Agregamos la función para actualizar la sección activa
+	}
 
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
 
@@ -150,11 +165,11 @@ export default function App() {
 								</DropdownMenu>
 							</Dropdown>
 						) : (
-							<Button onPress={onOpen} color="primary">
+							<Button onClick={onOpen} color="primary">
 								LOG IN
 							</Button>
 						)}
-						<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top-center">
+						<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
 							<ModalContent>
 								{(onClose) => (
 									<>
@@ -232,8 +247,8 @@ export default function App() {
 						<Link
 							className={`w-full text-red-800 hover:text-blue-700 ${
 								activeSection === item.href.replace('#', '') ? 'font-bold' : ''
-							}`} // Agregamos la clase CSS corrconst handleMenuItemClick = (href: string) => {
-								onClick={() => handleMenuItemClick(item.href)}
+							}`}
+							onClick={() => handleMenuItemClick(item.href)}
 						>
 							{item.name}
 						</Link>
