@@ -35,7 +35,7 @@ export default function CreateProject() {
 			if (selectedContent) {
 				try {
 					const response = await axios.get(
-						`https://e-commetrics.com/api/${selectedContent.table}/${selectedContent.project.id}`,
+						`http://localhost:3001/api/${selectedContent.table}/${selectedContent.project.id}`,
 					)
 					console.log(response.data) // Agrega esta línea para ver los datos en la consola
 					setData(response.data)
@@ -50,7 +50,7 @@ export default function CreateProject() {
 	useEffect(() => {
 		const fetchUser = async () => {
 			try {
-				const res = await axios.get('https://e-commetrics.com/api/user', {
+				const res = await axios.get('http://localhost:3001/api/user', {
 					withCredentials: true,
 				})
 				if (res.data.user) {
@@ -87,7 +87,7 @@ export default function CreateProject() {
 	const handleCheckData = async (event) => {
 		event.preventDefault()
 		try {
-			const response = await axios.put(`https://e-commetrics.com/projects/${selectedProject.id}`, selectedProject)
+			const response = await axios.put(`http://localhost:3001/projects/${selectedProject.id}`, selectedProject)
 
 			if (response.status === 200) {
 				toast.success('Proyecto actualizado exitosamente', { duration: 3000 }) // Mostrar notificación de éxito
@@ -115,7 +115,7 @@ export default function CreateProject() {
 		}
 
 		try {
-			const response = await fetch('https://e-commetrics.com/create/projects', {
+			const response = await fetch('http://localhost:3001/create/projects', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ export default function CreateProject() {
 	useEffect(() => {
 		const fetchProjects = async () => {
 			try {
-				const response = await axios.get(`https://e-commetrics.com/get/projects`)
+				const response = await axios.get(`http://localhost:3001/get/projects`)
 				setProjects(response.data)
 				// console.log('Proyectos:', response.data)
 			} catch (error) {
@@ -153,7 +153,7 @@ export default function CreateProject() {
 	useEffect(() => {
 		const fetchNameUser = async () => {
 			try {
-				const response = await axios.get('https://e-commetrics.com/get/users')
+				const response = await axios.get('http://localhost:3001/get/users')
 				setUsers(response.data)
 				// console.log(response.data) // Aquí están los datos que devuelve tu API
 			} catch (error) {
@@ -191,7 +191,7 @@ export default function CreateProject() {
 		event.preventDefault()
 
 		try {
-			const response = await axios.post(`https://e-commetrics.com/create/${formValues.table}`, formValues)
+			const response = await axios.post(`http://localhost:3001/create/${formValues.table}`, formValues)
 			console.log('Respuesta:', response.data)
 		} catch (error) {
 			console.error('Error:', error)
@@ -207,7 +207,7 @@ export default function CreateProject() {
 		// console.log('Datos a guardar:', dataInfo)
 
 		try {
-			const response = await axios.put(`https://e-commetrics.com/update/${table}`, dataInfo)
+			const response = await axios.put(`http://localhost:3001/update/${table}`, dataInfo)
 			console.log('Respuesta:', response.data)
 		} catch (error) {
 			console.error('Error:', error)

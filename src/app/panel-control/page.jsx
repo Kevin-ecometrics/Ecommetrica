@@ -87,7 +87,7 @@ export default function Page() {
 		}
 
 		fetchUser()
-	}, [])
+	})
 
 	useEffect(() => {
 		const fetchClients = async () => {

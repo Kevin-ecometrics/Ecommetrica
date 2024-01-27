@@ -71,7 +71,7 @@ app.post('/login', (req, res) => {
 app.post('/register', (req, res) => {
 	const { username, email, password, rol } = req.body
 
-	if (!username || !email || !password || !rol) {
+	if (!username || !email || !password || !rol ) {
 		return res.status(400).json({ error: 'Se requiere un correo electrónico y una contraseña.' })
 	}
 
@@ -92,7 +92,7 @@ app.post('/register', (req, res) => {
 			}
 
 			connection.query(
-				'INSERT INTO users (username, email, password, rol) VALUES (?, ?, ?, ?)',
+				'INSERT INTO users (username, email, password, rol, foto) VALUES (?, ?, ?, ?)',
 				[username, email, hashedPassword, rol],
 				(err, results) => {
 					if (err) {

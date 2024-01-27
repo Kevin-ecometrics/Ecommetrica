@@ -153,6 +153,9 @@ export default function App() {
 						>
 							<Button color="danger">CONTACT US</Button>
 						</Link>
+						<Link href='https://www.ecommetrica.com/index.html%20'>
+							<Button color="primary">Login</Button>	
+						</Link>
 						{isLoggedIn ? (
 							<Dropdown placement="bottom-end">
 								<DropdownTrigger>

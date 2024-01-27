@@ -2,16 +2,28 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
-import { FaCheck, FaXmark, FaPowerOff, FaHouse, FaBars, FaEnvelope, FaPlus, FaUsers  } from 'react-icons/fa6'
+import {
+	FaCheck,
+	FaXmark,
+	FaPowerOff,
+	FaHouse,
+	FaBars,
+	FaEnvelope,
+	FaPlus,
+	FaUsers,
+	FaComments,
+	FaWhatsapp,
+} from 'react-icons/fa6'
 import { Progress, Button, Link, Avatar, Accordion, AccordionItem, Divider, Chip } from '@nextui-org/react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-
+import { TypeAnimation } from 'react-type-animation'
+import { titillium, montse } from '../fonts'
 function Dashboard() {
 	const [user, setUser] = useState(null)
 	const router = useRouter()
 	const [projects, setProjects] = useState([])
-
+	let avatarURl
 	useEffect(() => {
 		const fetchUserAndProjects = async () => {
 			try {
@@ -35,7 +47,7 @@ function Dashboard() {
 		}
 
 		fetchUserAndProjects()
-	}, [])
+	})
 
 	const logout = async () => {
 		try {
@@ -72,15 +84,18 @@ function Dashboard() {
 		)
 	}
 
+	if (user.email === 'admin@gmail.com') {
+		avatarURl = '/reforma logo.png' // Reemplaza esto con la ruta a la imagen del administrador
+	} else {
+		avatarURl = '/logo.png' // Reemplaza esto con la ruta a la imagen del usuario
+	}
+
 	return (
 		<section className="h-screen ">
 			<div className="flex h-max bg-[#21233A]">
 				<aside className="hidden h-screen px-8 py-12 sm:block md:w-1/5">
 					<div className="flex flex-col items-center gap-4">
-						<Avatar isBordered color="primary" showFallback />
-						<h2 className="ml-4 text-2xl font-semibold text-white">
-							Welcome {user && user.username ? user.username : ''} to your dashboard{' '}
-						</h2>
+						<Avatar src={avatarURl} className="h-24 w-24" />
 					</div>
 					<Divider className="my-4 bg-white" />
 					<div className="relative py-8">
@@ -89,8 +104,7 @@ function Dashboard() {
 								key="1"
 								aria-label="Projects"
 								indicator={({ isOpen }) => (isOpen ? <FaXmark /> : <FaCheck />)}
-								title={<span style={{ color: 'white' }}>
-									Projects</span>}
+								title={<span style={{ color: 'white' }}>Projects</span>}
 							>
 								<ul>
 									{projects.map((project) => (
@@ -187,31 +201,47 @@ function Dashboard() {
 						)}
 					</div>
 					<div className="flex items-end justify-start">
-						<Button className="text-white bg-blue-500 hover:bg-blue-700 w-96" onClick={logout}>
+						<Button className="text-white bg-[#a32054] hover:bg-[#395788] w-96" onClick={logout}>
 							<FaPowerOff />
 							LOG OUT
 						</Button>
 					</div>
 				</aside>
 				<div className="flex flex-col w-screen md:w-4/5 bg-[#151A28]">
-					<div className="py-8 text-center">
-						<h1 className="text-4xl text-white">LIST OF PROJECTS</h1>
+					<div className="py-8 text-center text-white">
+						<TypeAnimation
+							sequence={[
+								// Same substring at the start will only be typed out once, initially
+								'Welcome to your dashboard',
+								1000, // wait 1s before replacing "Mice" with "Hamsters"
+								'Ecommetrica',
+								1000,
+							]}
+							wrapper="span"
+							speed={10}
+							style={{ fontSize: '2em', display: 'inline-block' }}
+						/>
 					</div>
-					<Divider className="my-4 bg-white" />
-					<div className="flex flex-col items-center justify-around gap-4 px-4 md:flex-row">
+					<Divider className="my-12 bg-white" />
+					<div className="flex flex-col items-center justify-around px-4 md:flex-row">
 						{projects.map((project) => (
 							<motion.div
 								key={project.id}
-								className="flex [div>&]:text-black flex-col max-w-sm h-full bg-white border rounded-b-3xl shadow-2xl"
+								className="flex [&>div]:text-white [&>h2]:text-white [&>p]:text-white flex-col w-[300px] h-full rounded-2xl  shadow-2xl"
+								style={{
+									backgroundImage: `url('/bg-card.png')`, // Reemplaza esto con la ruta a tu imagen
+									backgroundSize: 'cover', // Esto hace que la imagen cubra todo el div
+									backgroundRepeat: 'no-repeat', // Esto evita que la imagen se repita
+								}}
 								initial={{ y: -50, opacity: 0 }}
 								animate={{ y: 0, opacity: 1 }}
 								transition={{ duration: 0.5 }}
 							>
-								<div className="py-6 text-center text-white rounded-b-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-rose-800 via-rose-800 to-purple-900">
-									<h2 className="font-bold">{project.title}</h2>
+								<div className={`${titillium.className} font-semibold`}>
+									<h2 className="py-6 text-center text-4xl">{project.title}</h2>
 								</div>
-								<div className="px-4 py-12 text-center">
-									<p className="font-medium text-black">{project.content}</p>
+								<div className={`${montse.className} font-light`}>
+									<p className="px-4 py-4 text-center">{project.content}</p>
 								</div>
 								<div className="flex flex-col items-center justify-center gap-8 p-4">
 									<Progress
@@ -223,40 +253,48 @@ function Dashboard() {
 										showValueLabel={true}
 										className="max-w-md"
 									/>
-										<div className="mt-auto">
-											{user.rol === 'admin' ? (
-												<Chip
-													startContent={<FaCheck size={18} />}
-													variant="faded"
-													color="primary"
+									<div className="mt-auto">
+										{user.rol === 'admin' ? (
+											<Chip startContent={<FaCheck size={18} />} variant="faded" color="primary">
+												{project.percentage === 100
+													? 'Project completed'
+													: 'Project in progress'}
+											</Chip>
+										) : (
+											<Button className="bg-[#a32054] hover:bg-[#395788]">
+												<Link
+													className="text-white"
+													href={`/dashboard/${project.project_name}`}
 												>
-													{project.percentage === 100
-														? 'Project completed'
-														: 'Project in progress'}
-												</Chip>
-											) : (
-												<Button className="bg-blue-500 hover:bg-blue-700">
-													<Link
-														className="text-white"
-														href={`/dashboard/${project.project_name}`}
-													>
-														Go to proyect
-													</Link>
-												</Button>
-											)}
-										</div>
+													Go to proyect
+												</Link>
+											</Button>
+										)}
+									</div>
 								</div>
 							</motion.div>
 						))}
 						<div className="flex items-center justify-center p-4 bg-[#151A28]">
 							<Button
-								className="block text-white bg-blue-500 sm:hidden hover:bg-blue-700 w-80"
+								className="block text-white bg-[#a32054] sm:hidden hover:bg-[#395788] w-80"
 								onClick={logout}
 							>
 								LOG OUT
 							</Button>
 						</div>
 					</div>
+					<section className="flex flex-col justify-between sm:flex-row">
+						<div className="hidden md:block ">
+							{' '}
+							<h1 className="text-center text-3xl justify-center items-center rounded-2xl w-[600px] mt-8 mx-16 py-12 bg-[#21233A]">
+								Comercial
+							</h1>
+						</div>
+						<div className="flex justify-center items-center px-24">
+							<FaComments className="w-12 h-24" />
+							<FaWhatsapp className="text-green-500 h-12 w-24" />
+						</div>
+					</section>
 				</div>
 			</div>
 		</section>
