@@ -13,16 +13,13 @@ import {
 	NavbarMenu,
 	NavbarContent,
 	NavbarItem,
-	Dropdown,
-	DropdownTrigger,
-	DropdownMenu,
-	DropdownItem,
 } from '@nextui-org/react'
 import Image from 'next/image'
 import { Link } from 'react-scroll'
 import { AiOutlineMail, AiOutlineLock, AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { useRouter } from 'next/navigation'
 import axios from 'axios'
+import { useTranslation } from 'react-i18next'
 
 export default function App() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -33,6 +30,12 @@ export default function App() {
 	const [errorMessage, setErrorMessage] = useState('')
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
 	const [user, setUser] = useState(null)
+	const { i18n } = useTranslation()
+	const { t } = useTranslation()
+
+	const toggleLanguage = () => {
+		i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')
+	}
 
 	useEffect(() => {
 		const fetchUser = async () => {
@@ -84,10 +87,10 @@ export default function App() {
 
 	const menuItems = [
 		// { name: "Principal", href: "#principal" },
-		{ name: 'Services', href: '#services' },
-		{ name: 'Our Consulting', href: '#consulting' },
-		{ name: 'Schema', href: '#schema' },
-		{ name: 'Success Stories', href: '#stories' },
+		{ name: t('services'), href: '#services' },
+		{ name: t('ourConsulting'), href: '#consulting' },
+		{ name: t('schema'), href: '#schema' },
+		{ name: t('successStories'), href: '#stories' },
 		// { name: 'Collaboration', href: '#agile' },
 	]
 
@@ -151,12 +154,15 @@ export default function App() {
           in%20create%20my%20page"
 							target="_blank"
 						>
-							<Button color="danger">CONTACT US</Button>
+							<Button color="danger">{t('contactUs')}</Button>
 						</Link>
-						<Link href='https://www.ecommetrica.com/index.html%20'>
-							<Button color="primary">Login</Button>	
+						<Link href="https://e-commetrics.com/">
+							<Button color="primary">{t('login')}</Button>
 						</Link>
-						{isLoggedIn ? (
+						<Button color="warning" className="uppercase text-white" onClick={toggleLanguage}>
+							{i18n.language === 'en' ? 'English' : 'Español'}
+						</Button>
+						{/* {isLoggedIn ? (
 							<Dropdown placement="bottom-end">
 								<DropdownTrigger>
 									<Button color="primary">PROFILE</Button>
@@ -171,8 +177,8 @@ export default function App() {
 							<Button onClick={onOpen} color="primary">
 								LOG IN
 							</Button>
-						)}
-						<Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
+						)} */}
+						{/* <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
 							<ModalContent>
 								{(onClose) => (
 									<>
@@ -239,7 +245,7 @@ export default function App() {
 									</>
 								)}
 							</ModalContent>
-						</Modal>
+						</Modal> */}
 					</div>
 				</NavbarItem>
 			</NavbarContent>
