@@ -1,15 +1,179 @@
 {
-    "welcome": "Pruebe la primera sesión",
-    "ecommerceIs": "El comercio electrónico es:",
-    "logistics": "Logística",
-    "technology": "Tecnología",
-    "grow": "Crecer",
-    "growProductsServices": "Productos y servicios GROW",
+  "welcome": "¿Estas listo para proyectar tu negocio? ",
+  "ecommerceIs": "El comercio electrónico es:",
+  "logistics": "Logística",
+  "technology": "Tecnología",
+  "grow": "CRECER",
+  "growProductsServices": "Hacemos crecer tus productos y servicios ",
+  "services": "Servicios",
+  "ourConsulting": "Nuestra Consultoría",
+  "schema": "Esquema",
+  "successStories": "Historias de Éxito",
+  "contactUs": "CONTÁCTANOS",
+  "login": "INICIAR SESIÓN",
+  "servicesSection": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Te mostramos como hacerlo bien",
+    "strategic": "ASESORAMIENTO ESTRATEGICO  ",
+    "growth": "Crecimiento Garantizado",
+    "growthText": "Nos interesamos por tu negocio, nuestra formula te garantiza una planificación segura sobre proyecciones y resultados. ",
+    "google": "BÚSQUEDA EN GOOGLE-FACEBOOK",
+    "everyone": "Todos están allí",
+    "everyoneText": "La Optimización de Motores de Búsqueda es el crecimiento natural y escalable de marcas y empresas donde GOOGLE posee más del 95% de la intención de búsqueda.",
+    "messaging": "AUTOMATIZACION DE MENSAJERIA  ",
+    "doMore": "Haz Más con Menos  ",
+    "improveLead": "Aumenta tus leads y conversión con lo más avanzado en softwares y técnicas de crecimiento  ",
+    "leadThem": "ENCAMINA A TU ECOSISTEMA  ",
+    "digitalize": "Digitaliza todo",
+    "putYourBusiness": "Pon tu negocio donde tus clientes están consumiendo contenido junto a sus Visas y Mastercards.",
+    "preciseTime": "EVALUA TU TIEMPO E INFORMACION  ",
+    "corporateAnalysis": "Análisis corporativo",
+    "weAccompany": "Acompañamos a marcas y empresas a lo largo de su transformación digital.",
+    "leadGeneration": "GENERACION DE PROSPECTOS Y ATENCION A CLIENTE  ",
+    "avoidLooseness": "Evita perder cabos ",
+    "learnToCatch": "Aprende a captar todos tus clientes potenciales entrantes y rastrea tus ventas sin parar. ",
+    "trustedWebpage": "PÁGINA WEB CONFIABLE, SEGURA Y FIABLE",
+    "ecommerceExpertise": "+10 años de experiencia en comercio electrónico",
+    "experiencedTeam": "¡Un equipo experimentado a tu servicio siempre listo para nuevos proyectos!"
+  },
+  "consultingSection": {
+    "title": "eCommerce meticulosamente valorado",
+    "subtitle": "¡Un equipo digital unificado con experiencia en marketing y tecnología, creado especialmente para el comercio electrónico B2B y B2C!",
+    "button": "Empezar ahora",
+    "plans": {
+      "starter": {
+        "title": "Plan Inicial",
+        "description": "Para los recién llegados",
+        "price": "$675",
+        "duration": "por 3 meses",
+        "features": "Consultoría de comercio electrónico, Página web de plantilla, Email-WhatsApp, Tienda en Facebook, Análisis de meta SEO"
+      },
+      "pro": {
+        "title": "Plan Pro",
+        "description": "Para pequeñas empresas y emprendedores",
+        "price": "$995",
+        "duration": "por 4 meses",
+        "features": "Consulta avanzada, Gestión de proyectos, ¡Página web que vende!, Configuración de chat en vivo, Campañas de correo electrónico, Anuncios en Facebook, Campaña SEO, Capacitación del equipo digital, Hasta 15 productos o 3 servicios, Incorporación de tecnología"
+      },
+      "enterprise": {
+        "title": "Empresa",
+        "description": "Para empresas pequeñas y medianas con ambiciones",
+        "price": "$1185",
+        "duration": "por 6 meses",
+        "features": "Todo Pro, más: Coaching uno a uno, Tablero de análisis, Automatizaciones, Hasta 150 productos o 8 servicios, ¡Paquete de cuidado de bonificación!"
+      },
+      "custom": {
+        "title": "Personalizado",
+        "description": "Para empresas más grandes",
+        "price": "$1555",
+        "duration": "por 8 meses",
+        "features": "Tienes una página web personalizada en mente, ¡empecemos ahora! Productos y servicios limitados"
+      }
+    }
+  }, "schemaSection": {
+    "title": "¿Qué hay dentro de una Consulta? ",
+    "subtitle": "El esquema de trabajo    "  ,
+    "choose": "Elige",
+    "meet": "Encuentro",
+    "method": "Método",
+    "project": "Proyecto",
+    "chooseText": "Escoge tu plan favorito. En 3 días hábiles recibe tu fórmula exitosa, si así de fácil como se escucha con toda la seguridad que te mereces.  ",
+    "meetText": "Espera tu incorporación inmediata. Supervisa los procesos en tiempo real y pregúntanos en cualquier momento sobre cualquier duda del proceso.",
+    "methodText": "Mantente al cargo sin sacrificar tu tiempo ni trabajo, mientras nosotros trabajamos en crear tu ecommerce soñado ",
+    "projectText": "En la finalización del proyecto todos tu productos y servicios están 100% garantizados ",
+    "card1": {
+      "title": "¡CONECTA INTERNET A TU NEGOCIO!",
+      "description": "Lleva lo mejor del ecosistema digital directamente a tu página web o tienda digital y aumenta tus ventas mientras duermes"
+    },
+    "card2": {
+      "title": "¡EL COMERCIO ELECTRÓNICO ESTÁ CRECIENDO EN LA PANDEMIA!",
+      "description": "La consulta cumple con las proyecciones comerciales en estrategias de crecimiento orientadas a datos para cada flujo de ingresos. "
+    },
+    "card3": {
+      "title": "Negocios y tecnología",
+      "description": "PARA IMPULSAR TUS VENTAS CON EFICACIA. "
+    },
+    "card4": {
+      "title": "Cadena de suministro y despacho",
+      "description": "PARA AHORRAR DINERO Y ENTREGAR A TIEMPO."
+    },
+    "card5": {
+      "title": "Marketing digital",
+      "description": "PARA INFLUIR Y HACER CRECER TU MARCA EN LÍNEA. "
+    },
+    "consultation": {
+      "whyEcommerce": "¿POR QUÉ una Asesoria de e-Commerce?",
+      "yourConsultantWill": "Tu asesor ",
+      "workOnBusiness": "Trabajara en tus negocios para crecer áreas clave de tu ecosistema digital.",
+      "boostRevenue": "Impulsamos tus FLUJOS DE INGRESOS encontrando y resolviendo cuellos de botella, de una vez por todas, para dar la bienvenida a nuevas técnicas de growth hacking",
+      "recipeOfSuccess": "Lo llamamos una receta de éxito.",
+      "tryUs": "PRUÉBANOS, SIN COSTO",
+      "scheduleNow": "agenda ahora si tu negocio tiene problemas en cualquiera de las siguientes áreas clave de negocio:",
+      "researchAndDevelopment": {
+        "title": "INVESTIGACIÓN Y DESARROLLO",
+        "zeroTech": "¿Cero desarrollo tecnológico?",
+        "description": "Si a tu organización o negocio le falta un departamento especializado en: Posicionamiento, Despacho de Marketing Digital, Cadena de Suministro, Desarrollo de Negocios de I+D, Crecimiento"
+      },
+      "businessIntelligence": {
+        "title": "INTELIGENCIA DE NEGOCIOS",
+        "unclearDirection": "¿Dirección digital incierta?",
+        "description": "Si todo el entorno digital (TI, internet, marketing digital) aún carece de dirección y las agencias de marketing o freelancers no han logrado cumplir con tus expectativas."
+      },
+      "enhancedAnalytics": {
+        "title": "ANÁLISIS MEJORADOS (KPIs)",
+        "enoughData": "¿Suficientes datos para analizar?",
+        "description": "Si no estás recibiendo informes de campaña e insights estratégicos de manera regular en áreas clave como ventas, marketing, despacho, inventario, contabilidad y almacén."
+      },
+      "accurateMarketing": {
+        "title": "CAMPAÑAS DE MARKETING PRECISAS",
+        "goodCommunication": "¿Buena comunicación con el cliente?",
+        "description": "Si has escuchado que el correo electrónico está muerto, es hora de auditar las campañas deficitarias y notar cómo los clientes desinformados drenan más dinero que las técnicas de growth hacking de última generación."
+      }
+    }
+  },
+  "success": {
+    "title" :"Testimonios de clientes",
+    "subtitle": " Nos enorgullece trabajar con lideres emprendedores, compañías y negocios     ",
+    "here": "No solo te damos una lista de nombres, nuestro objetivo es mostrar más acerca de sus casos de éxito ",
+    "hereText": " Permítales compartir su experiencia con nuestro negocio.    ",
+    "ceoSolarEnterprise": {
+      "title": "Director Ejecutivo, Solar Enterprise",
+      "description": "Así es como se ve una empresa de un millón de dólares en eCommerce. Nuestro trabajo duro y preciso paga al comprobar cuando más personas cosechan de nuestro método meticulosamente evaluado."
+    },
+    "entrepreneurs": {
+      "title": "Entrepreneurs",
+      "description": "Dos hermanos con un sueño hecho realidad. Vea la aventura de una nueva empresa nacida en la era de Covid como la empresa de e-Commerce más disruptiva en su mercado y #NumberONE en su sector"
+    },
+    "ziggizWorldwide": {
+      "title": "Ziggiz a worldwide firm      ",
+      "description": "Introducción de un producto básico al e-Commerce, un viaje desde China a USA, México y Canadá"
+    },
+    "luceroDentalGroup": {
+      "title": "Lucero Dental Group      ",
+      "description": "El último campeón en un próspero sector dental en la región más importante del mundo en turismo médico y servicios de salud."
+    }
+  },
+  "ubication": {
+    "findUs": "Encuéntranos en Tijuana",
+    "anyQuestions": "¿Alguna pregunta?",
+    "weLoveToAnswer": "Nos encanta responder"
+  },
+  "footer": {
+    "ourSections": "Nuestras Secciones",
     "services": "Servicios",
     "ourConsulting": "Nuestra Consultoría",
     "schema": "Esquema",
     "successStories": "Historias de Éxito",
-    "contactUs": "CONTÁCTANOS",
-    "login": "INICIAR SESIÓN"
+    "collaboration": "Colaboración",
+    "workingHours": {
+      "title": "Horario de Trabajo",
+      "weekdays": "Lunes - Viernes:",
+      "hours": "9:00am - 18:00pm",
+      "saturday": "Sábado - Cerrado",
+      "sunday": "Domingo - Cerrado"
+    },
+    "copyright": "© 2023 Diseño por",
+    "Ecommetrica": "Ecommetrica"
+
   }
-  
+}

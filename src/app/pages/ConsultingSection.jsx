@@ -1,55 +1,51 @@
 import React from 'react'
 import { Card, Button } from '@nextui-org/react'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 function ConsultingSection() {
+	const { t } = useTranslation()
 	const datos = [
 		{
 			id: 1,
 			logo: '/starter_plan_logo.png',
-			title: 'Starter Plan',
-			subtitle: 'For new comers',
-			price: 675.0,
-			month: 'per 3 months',
-			description: 'eCommerce consulting      ',
-			subdescription: 'Template webpage Email-WhatsApp Facebook store SEO meta-analysis      ',
+			title: t('consultingSection.plans.starter.title'),
+			subtitle: t('consultingSection.plans.starter.description'),
+			price: t('consultingSection.plans.starter.price'),
+			month: t('consultingSection.plans.starter.duration'),
+			description: t('consultingSection.plans.starter.features'),
 			width: 100,
 			height: 100,
 		},
 		{
 			id: 2,
 			logo: '/pro_logo.png',
-			title: 'Pro Plan        ',
-			subtitle: 'For small businesses & entrepreneurs        ',
-			price: 995.0,
-			month: 'per 4 months',
-			description: 'Advanced consultation        ',
-			subdescription:
-				'Project management Webpage that sales! Live chat set up Email campaigns Facebook ads SEO campaign Digital team training Up to 15 products or 3 services Onboarding tech stack ',
+			title: t('consultingSection.plans.pro.title'),
+			subtitle: t('consultingSection.plans.pro.description'),
+			price: t('consultingSection.plans.pro.price'),
+			month: t('consultingSection.plans.pro.duration'),
+			description: t('consultingSection.plans.pro.features'),
 			width: 100,
 			height: 100,
 		},
 		{
 			id: 3,
 			logo: '/enterptrise_logo.png',
-			title: 'Enterprise',
-			subtitle: 'For ambitioning small to medium size firms      ',
-			price: 1185.0,
-			month: 'per 6 months',
-			description: 'Everything Pro, plus:      ',
-			subdescription:
-				'One-on-one coaching Analytics dashboard Automations Up to 150 products or 8 services Bonus care package!',
+			title: t('consultingSection.plans.enterprise.title'),
+			subtitle: t('consultingSection.plans.enterprise.description'),
+			price: t('consultingSection.plans.enterprise.price'),
+			month: t('consultingSection.plans.enterprise.duration'),
+			description: t('consultingSection.plans.enterprise.features'),
 			width: 100,
 			height: 100,
 		},
 		{
 			id: 4,
 			logo: '/custom_logo.webp',
-			title: 'Custom      ',
-			subtitle: 'For larger enterprises      ',
-			price: 1555.0,
-			month: 'per 8 months',
-			description: "You have a custom webpage in mind, let's start it now!      ",
-			subdescription: 'Limited products & services        ',
+			title: t('consultingSection.plans.custom.title'),
+			subtitle: t('consultingSection.plans.custom.description'),
+			price: t('consultingSection.plans.custom.price'),
+			month: t('consultingSection.plans.custom.duration'),
+			description: t('consultingSection.plans.custom.features'),
 			width: 40,
 			height: 40,
 		},
@@ -65,12 +61,9 @@ function ConsultingSection() {
 
 	return (
 		<div id="consulting" className="items-center py-16 text-center min-h-min">
-			<h1 className="text-[#623375] text-5xl font-bold">eCommerce meticulously appraised</h1>
-			<p className="text-[#f52e55] text-xl py-8 font-bold">
-				A unified digital team with marketing and technology expertise, built especially for B2B and B2C
-				eCommerce!
-			</p>
-			<div className="grid grid-cols-1 gap-4 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-32">
+			<h1 className="text-[#623375] text-5xl font-bold">{t('consultingSection.title')}</h1>
+			<p className="text-[#f52e55] text-xl py-8 font-bold"> {t('consultingSection.subtitle')}</p>
+			<div className="grid grid-cols-1 gap-4 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-8">
 				{datos.map((dato) => (
 					<Card
 						key={dato.id}
@@ -95,17 +88,15 @@ function ConsultingSection() {
 								<h1 className="py-2">{dato.title}</h1>
 								<h1 className="py-2">{dato.subtitle}</h1>
 								<div className="flex flex-row items-center justify-center">
-									<div className="text-3xl">$</div>
 									<div className="text-6xl font-bold">{dato.price}</div>
 								</div>
 								<div className="py-2 text-gray-500">{dato.month}</div>
 								<Button className="w-48 mt-10 text-white bg-red-500 hover:bg-red-700 rounded-2xl">
-									START NOW
+									{t('consultingSection.button')}
 								</Button>
 							</div>
 							<div className="p-8 mx-auto">
 								<h1>{dato.description}</h1>
-								<h1>{dato.subdescription}</h1>
 							</div>
 						</div>
 					</Card>

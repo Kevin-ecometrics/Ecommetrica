@@ -1,15 +1,179 @@
 {
-    "welcome": "Try 1st Session",
-    "ecommerceIs": "Ecommerce is:",
-    "logistics": "Logistics",
-    "technology": "Technology",
-    "grow": "GROW",
-    "growProductsServices": "GROW Products & Services",
+  "welcome": "Are you ready to project your project?  ",
+  "ecommerceIs": "Ecommerce is:",
+  "logistics": "Logistics",
+  "technology": "Technology",
+  "grow": "GROW",
+  "growProductsServices": "We make your products and services grow",
+  "services": "Services",
+  "ourConsulting": "Our Consulting",
+  "schema": "Schema",
+  "successStories": "Success Stories",
+  "contactUs": "CONTACT US",
+  "login": "LOGIN",
+  "servicesSection": {
+    "title": "Our Services",
+    "subtitle": "We show you how to do it right    ",
+    "strategic": "STRATEGIC CONSULTATION",
+    "growth": "Growth Guaranteed",
+    "growthText": "We care about your business and our recipe for success guarantees safe planning over discrete projections and results.",
+    "google": "GOOGLE-FACEBOOK SEARCH",
+    "everyone": "Everyone is there",
+    "everyoneText": "Search Engine Optimization is the natural and scalable growth of brands and firms where GOOGLE owns +95% of search intent.",
+    "messaging": "MESSAGING & AUTOMATIONS",
+    "doMore": "Do more with less",
+    "improveLead": "Improve lead acquisition and conversion with state-of-the-art growth hacking techniques.",
+    "leadThem": "LEAD THEM TO YOUR ECOSYSTEM",
+    "digitalize": "Digitalize everything",
+    "putYourBusiness": "Put your business where your customers are consuming content next to their Visas and Mastercards.",
+    "preciseTime": "PRECISE TIME AND KNOWLEDGE",
+    "corporateAnalysis": "Corporate analysis",
+    "weAccompany": "We accompany brands and firms throughout their digital transformation.",
+    "leadGeneration": "LEAD GENERATION & CUSTOMER SERVICE",
+    "avoidLooseness": "Avoid looseness",
+    "learnToCatch": "Learn to catch all incoming leads and chase your sales nonstop.",
+    "trustedWebpage": "TRUSTED, SAFE & RELIABLE WEBPAGE",
+    "ecommerceExpertise": "+10yrs of eCommerce expertise",
+    "experiencedTeam": "An experienced team at your service always ready for new projects!"
+  },
+  "consultingSection": {
+    "title": "eCommerce meticulously appraised",
+    "subtitle": "A unified digital team with marketing and technology expertise, built especially for B2B and B2C eCommerce!    ",
+    "button": "START NOW",
+    "plans": {
+      "starter": {
+        "title": "Starter Plan",
+        "description": "For new comers",
+        "price": "$675",
+        "duration": "per 3 months",
+        "features": "eCommerce consulting, Template webpage, Email-WhatsApp, Facebook store, SEO meta-analysis"
+      },
+      "pro": {
+        "title": "Pro Plan",
+        "description": "For small businesses & entrepreneurs",
+        "price": "$995",
+        "duration": "per 4 months",
+        "features": "Advanced consultation, Project management, Webpage that sales!, Live chat set up, Email campaigns, Facebook ads, SEO campaign, Digital team training, Up to 15 products or 3 services, Onboarding tech stack"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "For ambitioning small to medium size firms",
+        "price": "$1185",
+        "duration": "per 6 months",
+        "features": "Everything Pro, plus: One-on-one coaching, Analytics dashboard, Automations, Up to 150 products or 8 services, Bonus care package!"
+      },
+      "custom": {
+        "title": "Custom",
+        "description": "For larger enterprises",
+        "price": "$1555",
+        "duration": "per 8 months",
+        "features": "You have a custom webpage in mind, let's start it now! Limited products & services"
+      }
+    }
+  },
+  "schemaSection": {
+    "title": "What is inside a Consultation?    ",
+    "subtitle": "The Working Schema    " ,
+    "choose": "Choose",
+    "meet": "Meet",
+    "method": "Method",
+    "project": "Project",
+    "chooseText": "Choose your favorite plan. In 3 working days you will receive your successful formula, yes, as easy as it sounds with all the security you deserve.",
+    "meetText": "Expect your immediate incorporation. Monitor the processes in real time and ask us at any time about any doubts about the process.",
+    "methodText": "Stay in charge without sacrificing your time or work, while we work on creating your dream ecommerce.",
+    "projectText": "At completion, all deliverables and services are 100% guaranteed.",
+    "card1": {
+      "title": "CONNECT THE INTERNET TO YOUR BUSINESS!",
+      "description": "Bring the best of the digital ecosystem right to your digital webpage or store, and boost your sales while you sleep."
+    },
+    "card2": {
+      "title": "ECOMMERCE IS GROWING IN PANDEMIC!      ",
+      "description": "Consultation fulfills business projections in data-oriented growth strategies for every revenue stream.      "
+    },
+    "card3": {
+      "title": "Business & Technology      ",
+      "description": "TO BOOST YOUR SALES WITH EFFICACY.      "
+    },
+    "card4": {
+      "title": "Supply Chain & Dispatch      ",
+      "description": "TO SAVE MONEY AND DELIVER ON TIME.      "
+    },
+    "card5": {
+      "title": "Digital Marketing      ",
+      "description": "TO INFLUENCE AND GROW YOUR BRAND ONLINE.      "
+    },
+    "consultation": {
+      "whyEcommerce": "WHY an e-Commerce Consultation?",
+      "yourConsultantWill": "Your advisor      ",
+      "workOnBusiness": "Work in your business to grow key areas of your digital ecosystem.",
+      "boostRevenue": "We boost your REVENUE STREAMS by finding solving neck bottles, once and for all, to welcome new growth hacking techniques",
+      "recipeOfSuccess": "We call it a recipe of success.",
+      "tryUs": "TRY US, FREE OF CHARGE",
+      "scheduleNow": "schedule now if your business is having trouble in any of the following key business areas :",
+      "researchAndDevelopment": {
+        "title": "RESEARCH AND DEVELOPMENT",
+        "zeroTech": "Zero tech development?",
+        "description": "If your organization or business lacks a department specialized in: Positioning, Digital Marketing Dispatch, Supply Chain, R&D Business Development, Growth"
+      },
+      "businessIntelligence": {
+        "title": "BUSINESS INTELLIGENCE",
+        "unclearDirection": "Unclear digital direction?",
+        "description": "If all the digital environment (IT, internet, digital marketing) is still missing direction and marketing agencies or freelancers haven't succeeded at meeting your expectations."
+      },
+      "enhancedAnalytics": {
+        "title": "ENHANCED ANALYTICS (KPIs)",
+        "enoughData": "Enough data to analyze?",
+        "description": "If you're not receiving campaign reports and strategic insights on a certain basis in key areas like sales, marketing, dispatch, inventory, accounting, and warehouse."
+      },
+      "accurateMarketing": {
+        "title": "ACCURATE MARKETING CAMPAIGNS",
+        "goodCommunication": "Good client communication?",
+        "description": "If you've heard email's dead it's time to audit deficit campaigns and notice how misinformed customers drains money than state-of-the-art growth hacking."
+      }
+    }
+  },
+  "success": {
+    "title" :"              Clients testimonials    ",
+    "subtitle": "              We are proud to work with entrepreneurial leaders, companies and businesses.    ",
+    "here": "WE DON'T JUST GIVE YOU A LIST OF NAMES, OUR GOAL IS TO SHOW YOU MORE ABOUT THEIR SUCCESS STORIES.    ",
+    "hereText": "Let them share their experience with our business.    ",
+    "ceoSolarEnterprise": {
+      "title": "Chief Executive Office, Solar Enterprise",
+      "description": "This is how a million-dollar company looks like in eCommerce. Our hard and precise work pays to check when more people harvests from our meticulously appraised method."
+    },
+    "entrepreneurs": {
+      "title": "Entrepreneurs",
+      "description": "Two brothers with a dream came true. See the adventure of a new Covid-era born firm as the e-Commerce most disrupting enterprise in its market and #NumberONE in its sector"
+    },
+    "ziggizWorldwide": {
+      "title": "Ziggiz a worldwide firm",
+      "description": "Intro of a commodity to the e-Commerce, a travel from China to USA, México and Canada"
+    },
+    "luceroDentalGroup": {
+      "title": "Lucero Dental Group",
+      "description": "The latest champion in a thriving dental sector at the most important region worldwide in medical tourism and health services."
+    }
+  },
+  "ubication": {
+    "findUs": "Find us in Tijuana",
+    "anyQuestions": "Any questions?",
+    "weLoveToAnswer": "We love to answer"
+  },
+  "footer": {
+    "ourSections": "Our Sections",
     "services": "Services",
     "ourConsulting": "Our Consulting",
     "schema": "Schema",
     "successStories": "Success Stories",
-    "contactUs": "CONTACT US",
-    "login": "LOGIN"
+    "collaboration": "Collaboration",
+    "workingHours": {
+      "title": "Working Hours",
+      "weekdays": "Monday - Friday:",
+      "hours": "9:00am - 18:00pm",
+      "saturday": "Saturday - Closed",
+      "sunday": "Sunday - Closed"
+    },
+    "copyright": "© 2023 Design by",
+    "Ecommetrica": "Ecommetrica"
   }
-  
+}
